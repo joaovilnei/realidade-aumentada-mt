@@ -7,9 +7,10 @@
   </head>
   
   <body style="margin: 0; overflow: hidden;">
+     <video id="meuvideo" src="video_francisco.mp4" autoplay loop playsinline webkit-playsinline muted style=“display: none;”></video>
     <a-scene vr-mode-ui="enabled: false" embedded arjs="debugUIEnabled: false">
       <a-marker preset="hiro">
-         <a-image src="foto_quixada.png" rotation="-90 0 0" width="1.5" height="1"></a-image>
+         <a-video src="#meuvideo" rotation="-90 -90 0"></a-video>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
