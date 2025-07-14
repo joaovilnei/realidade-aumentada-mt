@@ -1,6 +1,27 @@
    <!DOCTYPE html>
 <html>
   <head>
+    <title>Terceira experiência de RA usando o marcador hiro e um video</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
+  </head>
+  
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene vr-mode-ui="enabled: false" embedded arjs="debugUIEnabled: false">
+      <a-marker preset="hiro">
+         <a-image src="foto_quixada.png" rotation="-90 0 0" width="1.5" height="1"></a-image>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+    
+  </body>
+  
+</html>
+
+<!--
+   <!DOCTYPE html>
+<html>
+  <head>
     <title>Primeira experiência de RA usando o marcador hiro e um mesh</title>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
@@ -17,3 +38,4 @@
   </body>
   
 </html>
+-->
